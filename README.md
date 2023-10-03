@@ -1,6 +1,6 @@
 # ykkhmrdn.github.io
 
-# Hai, Saya ykkhmrdn!
+# Hai, Saya Yoko!
 
 Selamat datang di gudang kreatif saya di GitHub. Ini adalah tempat di mana saya bermain-main dengan kode, menciptakan hal-hal menarik, dan berbagi pengalaman dengan Anda.
 
