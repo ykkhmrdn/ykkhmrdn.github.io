@@ -1,4 +1,4 @@
-const roles = ['Front-end Developer', 'Back-end Developer', 'UI/UX Designer'];
+const roles = ['Front-end Developer', 'Back-end Developer', 'UI/UX Designer', 'Data Analytics'];
 let roleIndex = 0;
 let charIndex = 0;
 
@@ -41,10 +41,10 @@ document.querySelectorAll('.read-more').forEach((readMore, index) => {
         toggleButton.classList.remove('hidden');
         toggleButton.addEventListener('click', function() {
             if (readMore.classList.contains('line-clamp-2')) {
-                this.textContent = 'Read Less!';
+                this.textContent = 'Read Less >';
                 readMore.classList.remove('line-clamp-2');
             } else {
-                this.textContent = 'Read More!';
+                this.textContent = 'Read More >';
                 readMore.classList.add('line-clamp-2');
             }
         });
