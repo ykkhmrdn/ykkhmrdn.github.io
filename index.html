@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-behavior[smooth]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,30 +7,29 @@
     <title>Portfolio | Yoko</title>
   </head>
   <body>
+
+
     <!-- Navbar -->
 
-    <nav class="mt-18 mx-32">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
         <a href="#" class="flex items-center">
-          <div class="w-[70px] h-14 justify-center items-center inline-flex">
-            <div>
-              <span
-                class="text-neutral-900 text-5xl font-bold font-['Inter'] leading-[56px]"
-                >yk</span
-              ><span
-                class="text-primary-600 text-5xl font-bold font-['Inter'] leading-[56px]"
-                >.</span
-              >
-            </div>
-          </div>
+          <span
+            class="text-primary-950 text-5xl font-bold font-['Inter'] leading-[56px] self-center whitespace-nowrap dark:text-white "
+            >yk</span
+          >
+          <span
+          class="text-primary-900 text-5xl font-bold font-['Inter'] leading-[56px] self-center whitespace-nowrap dark:text-white"
+          >.</span
+        >
         </a>
         <button
-          data-collapse-toggle="navbar-solid-bg"
+          data-collapse-toggle="navbar-default"
           type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-solid-bg"
+          aria-controls="navbar-default"
           aria-expanded="false"
         >
           <span class="sr-only">Open main menu</span>
@@ -50,36 +49,36 @@
             />
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700"
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
           >
             <li>
               <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-white bg-primary-700 rounded md:bg-transparent md:text-primary-700 md:p-0 md:dark:text-primary-500 dark:bg-primary-600 md:dark:bg-transparent text-lg font-normal font-['Inter'] leading-loose"
+                href="index.html"
+                class="w-[52.28px] text-primary-950 text-lg font-normal font-['Inter'] leading-loose block py-2 pl-3 pr-4 bg-primary-700 rounded md:bg-transparent md:text-primary-00 md:p-0 dark:text-white md:dark:text-primary-500"
                 aria-current="page"
                 >Home</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-neutral-800 text-lg font-normal font-['Inter'] leading-loose"
+                href="#projects"
+                class="text-primary-950 text-lg font-normal font-['Inter'] leading-loose block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >Projects</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-neutral-800 text-lg font-normal font-['Inter'] leading-loose"
+                class=" text-primary-950 text-lg font-normal font-['Inter'] leading-loose block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >About</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-neutral-800 text-lg font-normal font-['Inter'] leading-loose"
+                class="text-primary-950 text-lg font-normal font-['Inter'] leading-loose block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >Contact</a
               >
             </li>
@@ -92,18 +91,20 @@
 
     <!-- Hero Section -->
 
-    <div class="flex flex-col justify-center items-center gap-8 mt-40">
+    <div class="flex flex-col justify-center items-center gap-8 min-h-screen">
       <div
-        class="text-neutral-800 text-[56px] font-bold font-['Sora'] leading-[70px]"
+        class="text-primary-950 text-[56px] font-bold font-['Sora'] leading-[70px]"
       >
         Hi, I’m Yoko.
       </div>
-    <div class="flex items-center">
-        <div class="text-primary-900 font-sora text-4xl font-bold leading-snug role min-h-[50px]">
-            <!-- Role text will be inserted here by JavaScript -->
+      <div class="flex items-center">
+        <div
+          class="text-primary-900 font-sora text-4xl font-bold leading-snug role min-h-[50px]"
+        >
+          <!-- Role text will be inserted here by JavaScript -->
         </div>
         <div class="w-0.5 h-6 bg-primary-900 animate-blink"></div>
-    </div>
+      </div>
       <div
         class="text-gray-800 text-2xl font-normal font-['Inter'] leading-9 text-center"
       >
@@ -174,8 +175,219 @@
 
     <!-- End Hero Section -->
 
+    <!-- Project Section -->
+    <section id="projects">
+      <div class="flex flex-col justify-center items-center gap-8 min-h-screen">
+        <div
+          class="w-[260px] h-[55px] text-primary-950 text-[56px] font-bold font-['Sora'] leading-[70px]"
+        >
+          Projects
+        </div>
+        <div class="text-primary-900 text-2xl font-normal font-['Inter']">
+          here are the projects I developed, prototyped or participated in
+        </div>
+
+        <div class="flex flex-wrap gap-10 justify-center items-center">
+          <!-- Repeat this div 8 times for 8 cards -->
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-16 transition-all duration-500 ease-in-out h-auto"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg w-full h-64 object-cover"
+                src="./assets/img/mockup.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Website E-Commerce Thrift Fashion
+                </h5>
+              </a>
+              <p class="mb-14 font-normal text-gray-700 dark:text-gray-400">
+                Capstone project Software Engineering Studi Independent at RevoU
+                x Kampus Merdeka.
+              </p>
+              <div class="flex items-center gap-4 mb-5">
+                <i class="fab fa-html5 text-orange-500 text-2xl"></i>
+                <i class="fab fa-css3-alt text-blue-500 text-2xl"></i>
+                <i class="fab fa-js-square text-yellow-500 text-2xl"></i>
+                <i class="fab fa-node-js text-green-500 text-2xl"></i>
+              </div>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition-all duration-300 ease-in-out"
+              >
+                View Code
+              </a>
+              <a
+                href=""
+                class="inline-flex items-center px-3 py-2 mx-2 text-sm font-medium text-center text-primary-950 border border-primary-500 rounded-lg hover:bg-primary-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition-all duration-300 ease-in-out"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-16 transition-all duration-500 ease-in-out"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg w-full h-64 object-cover"
+                src="./assets/img/himuaamockup.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Website Information System Himuaa
+                </h5>
+              </a>
+              <p
+                class="mb-4 font-normal text-gray-700 dark:text-gray-400 line-clamp-2 read-more"
+              >
+                Capstone Project in the Komunitas Belajar Bersama Informatika
+                (KBBMI), a website to accommodate all academic and non-academic
+                information in student organizations at Alma Ata University,
+                Yogyakarta.
+              </p>
+              <button
+                class="read-more-toggle text-primary-700 rounded pb-4 transition-colors duration-200 hidden"
+              >
+                Read More!
+              </button>
+              <div class="flex items-center gap-4 mb-5">
+                <i class="fab fa-html5 text-orange-500 text-2xl"></i>
+                <i class="fab fa-css3-alt text-blue-500 text-2xl"></i>
+                <i class="fab fa-js-square text-yellow-500 text-2xl"></i>
+              </div>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition-all duration-300 ease-in-out"
+              >
+                View Code
+              </a>
+              <a
+                href=""
+                class="inline-flex items-center px-3 py-2 mx-2 text-sm font-medium text-center text-primary-950 border border-primary-500 rounded-lg hover:bg-primary-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition-all duration-300 ease-in-out"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-16 transition-all duration-500 ease-in-out h-auto"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg w-full h-64 object-cover"
+                src="./assets/img/mockup.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Website E-Commerce Thrift Fashion
+                </h5>
+              </a>
+              <p class="mb-14 font-normal text-gray-700 dark:text-gray-400">
+                Capstone project Software Engineering Studi Independent at RevoU
+                x Kampus Merdeka.
+              </p>
+              <div class="flex items-center gap-4 mb-5">
+                <i class="fab fa-html5 text-orange-500 text-2xl"></i>
+                <i class="fab fa-css3-alt text-blue-500 text-2xl"></i>
+                <i class="fab fa-js-square text-yellow-500 text-2xl"></i>
+                <i class="fab fa-node-js text-green-500 text-2xl"></i>
+              </div>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition-all duration-300 ease-in-out"
+              >
+                View Code
+              </a>
+              <a
+                href=""
+                class="inline-flex items-center px-3 py-2 mx-2 text-sm font-medium text-center text-primary-950 border border-primary-500 rounded-lg hover:bg-primary-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition-all duration-300 ease-in-out"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-16 transition-all duration-500 ease-in-out"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg w-full h-64 object-cover"
+                src="./assets/img/himuaamockup.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Website Information System Himuaa
+                </h5>
+              </a>
+              <p
+                class="mb-4 font-normal text-gray-700 dark:text-gray-400 line-clamp-2 read-more"
+              >
+                Capstone Project in the Komunitas Belajar Bersama Informatika
+                (KBBMI), a website to accommodate all academic and non-academic
+                information in student organizations at Alma Ata University,
+                Yogyakarta.
+              </p>
+              <button
+                class="read-more-toggle text-primary-700 rounded pb-4 transition-colors duration-200 hidden"
+              >
+                Read More!
+              </button>
+              <div class="flex items-center gap-4 mb-5">
+                <i class="fab fa-html5 text-orange-500 text-2xl"></i>
+                <i class="fab fa-css3-alt text-blue-500 text-2xl"></i>
+                <i class="fab fa-js-square text-yellow-500 text-2xl"></i>
+                <i class="fab fa-node-js text-green-500 text-2xl"></i>
+              </div>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition-all duration-300 ease-in-out"
+              >
+                View Code
+              </a>
+              <a
+                href=""
+                class="inline-flex items-center px-3 py-2 mx-2 text-sm font-medium text-center text-primary-950 border border-primary-500 rounded-lg hover:bg-primary-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition-all duration-300 ease-in-out"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- End of card -->
+        </div>
+      </div>
+    </section>
+
+    <!-- End Project Section -->
+
     <!-- Script -->
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3356fc0367.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
     <script src="./scripts/script.js"></script>
 

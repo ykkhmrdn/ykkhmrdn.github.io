@@ -15,3 +15,7 @@ EXPOSE 3000
 # Start app
 CMD ["npm", "start"]
 
+# Run Tailwind CSS
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+

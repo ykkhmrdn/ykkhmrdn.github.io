@@ -29,3 +29,24 @@ function erase() {
 document.addEventListener('DOMContentLoaded', function() {
     if (roles.length) setTimeout(type, 2000);
 });
+
+
+// Read More Button
+document.querySelectorAll('.read-more').forEach((readMore, index) => {
+    const toggleButton = document.querySelectorAll('.read-more-toggle')[index];
+    const lineHeight = parseFloat(getComputedStyle(readMore)['line-height']);
+    const lines = readMore.scrollHeight / lineHeight;
+
+    if (lines > 2) {
+        toggleButton.classList.remove('hidden');
+        toggleButton.addEventListener('click', function() {
+            if (readMore.classList.contains('line-clamp-2')) {
+                this.textContent = 'Read Less!';
+                readMore.classList.remove('line-clamp-2');
+            } else {
+                this.textContent = 'Read More!';
+                readMore.classList.add('line-clamp-2');
+            }
+        });
+    }
+});
