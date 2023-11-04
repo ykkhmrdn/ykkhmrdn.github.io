@@ -50,3 +50,84 @@ document.querySelectorAll('.read-more').forEach((readMore, index) => {
         });
     }
 });
+
+// Contact Form
+document.querySelector('#contact form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+
+    // Rename fields to match your server's expected input
+    data.email = data.floating_email;
+    data.name = data.floating_your_name;
+    data.message = data.floating_message;
+
+    // Delete the old properties
+    delete data.floating_email;
+    delete data.floating_your_name;
+    delete data.floating_message;
+
+    // Make sure all fields are filled
+    if (!data.name || !data.email || !data.message) {
+        swal({
+            title: "Hold Up!",
+            text: "Ensure all fields are filled out correctly.",
+            icon: "error",
+            button: {
+                text: "Got It",
+                closeModal: true,
+            },
+            dangerMode: true,
+        });
+        return;
+    }
+
+    // Confirm before sending
+    const willSend = await swal({
+        title: "Ready to Send?",
+        text: "Would you like to review your message before sending?",
+        icon: "warning",
+        buttons: ["Edit", "Send"],
+    });
+
+    if (!willSend) {
+        // User chose to edit their message
+        return;
+    }
+
+    const response = await fetch('http://localhost:3000/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+        swal({
+            title: "Message Sent!",
+            text: "Your message is on its way. Expect a response soon!",
+            icon: "success",
+            button: {
+                text: "Awesome",
+                closeModal: true,
+            },
+        });
+
+        // Clear the form fields
+        form.reset();
+    } else {
+        swal({
+            title: "Message Failed",
+            text: "Something went wrong. Give it another shot.",
+            icon: "error",
+            button: {
+                text: "Will Do",
+                closeModal: true,
+            },
+            dangerMode: true,
+        });
+    }
+});
