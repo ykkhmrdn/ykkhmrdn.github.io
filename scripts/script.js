@@ -111,7 +111,7 @@ document.querySelector('#contact form').addEventListener('submit', async (event)
             text: "Your message is on its way. Expect a response soon!",
             icon: "success",
             button: {
-                text: "Awesome",
+                text: "Back to Site",
                 closeModal: true,
             },
         });
