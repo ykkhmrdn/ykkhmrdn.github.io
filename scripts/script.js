@@ -138,3 +138,10 @@ document.querySelector('#contact form').addEventListener('submit', async (event)
 function showAlert() {
     swal("Oops!", "Live Demo not found. This project has not yet been deployed!", "error");
   }
+
+
+
+// Navbar Toggle Button for Mobile Devices
+  document.getElementById('navbar-toggle').addEventListener('click', function () {
+    document.getElementById('navbar-menu').classList.toggle('hidden');
+  });
