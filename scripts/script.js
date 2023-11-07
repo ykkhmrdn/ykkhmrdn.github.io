@@ -131,3 +131,10 @@ document.querySelector('#contact form').addEventListener('submit', async (event)
         });
     }
 });
+
+
+
+// Function to show alert if live demo not found
+function showAlert() {
+    swal("Oops!", "Live Demo not found. This project has not yet been deployed!", "error");
+  }
