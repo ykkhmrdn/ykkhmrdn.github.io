@@ -1584,6 +1584,11 @@ input:checked + .toggle-bg{
   border-color: rgb(14 165 233 / var(--tw-border-opacity));
 }
 
+.border-primary-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(3 105 161 / var(--tw-border-opacity));
+}
+
 .bg-blue-700{
   --tw-bg-opacity: 1;
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
@@ -1791,6 +1796,11 @@ input:checked + .toggle-bg{
   line-height: 1.25rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1954,6 +1964,21 @@ input:checked + .toggle-bg{
 .text-purple-500{
   --tw-text-opacity: 1;
   color: rgb(144 97 249 / var(--tw-text-opacity));
+}
+
+.text-primary-400{
+  --tw-text-opacity: 1;
+  color: rgb(56 189 248 / var(--tw-text-opacity));
+}
+
+.text-primary-800{
+  --tw-text-opacity: 1;
+  color: rgb(7 89 133 / var(--tw-text-opacity));
+}
+
+.text-primary-600{
+  --tw-text-opacity: 1;
+  color: rgb(2 132 199 / var(--tw-text-opacity));
 }
 
 .opacity-0{
